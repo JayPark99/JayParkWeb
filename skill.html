@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Developer. Jay Park - SKILL</title>
+    <link rel="stylesheet" href="about.css">
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <img src="img_nav.png" style="width: 100%; filter:brightness(50%);">
+        <div class="menu">
+            <h1 style="color: white;display: inline;padding: 30px;">Developer. Jay Park</h1>
+
+            <a class="btn_menu" href="main.html">MAIN</a>
+            <a class="btn_menu" href="about.html">ABOUT</a>
+            <a class="btn_menu_selected" href="skill.html">SKILL</a>
+            <a class="btn_menu" href="future.html">FUTURE</a>
+        </div>
+    </div>
+
+    <aside>
+        <div class="side" onclick="showTop()">TOP</div>
+    </aside>
+
+    <div class="body">
+        <h2>바로가기</h2>
+        <ul id="anchor" style="list-style: none;"></ul>
+    </div>
+
+    <br><br>
+
+    <div class="body">
+
+        <br><br>
+
+        <h1 id="section6">본인 역량</h1>
+        <p>
+            제가 가장 자신있는 언어는 JAVA 입니다.
+            JAVA를 통해 서버를 구축할 수 있으며, 주로 사용하는 데이터베이스는 MySQL 입니다.
+            또한 Spring Boot를 통한 서버 구축도 가능합니다.
+            회원가입, 로그인, 게시판, 즐겨찾기 정도의 기능을 구현한 경험이 있습니다.
+            안드로이드 스튜디오, html, css, javascript도 다룰 수 있습니다.
+            유니티를 이용한 3D 게임 프로젝트를 진행한적이 있습니다.
+
+        </p>
+
+        <br><br>
+
+        <h1 id="section7">관심 기술</h1>
+        <p>
+        <h2>Spring Framework</h2>
+        Spring Framework에 대해 관심이 생겼습니다.
+        기존에는 Spring Boot를 이용해 쉽게 개발해본 경험이 있습니다.
+        Spring Boot가 아닌 정통적인 Spring Framework에 대해 더욱 깊이 공부해보고 개발을 진행해 보고 싶습니다.
+
+        <br><br>
+        <h2>react.js</h2>
+        최근에는 react.js 라는 것을 알게 되었고 관심이 생겼습니다.
+        아직 다루어보지 않았지만 조만간 공부해보며 개발해보고 싶습니다.
+        react.js란 facebook에서 제공해주는 프론트엔드 라이브러리입니다.
+        최근에 많이 사용 되고있는 웹·앱 View UI를 개발할수 있도록 해줍니다.
+
+        </p>
+
+        <br><br>
+
+        <br><br>
+
+    </div>
+
+    <script>
+
+        showAnchorList();
+
+        function showAnchorList() {
+            var section = document.getElementsByTagName("h1");
+            for (i = 1; section.length; i++)
+                anchor.innerHTML += '<li><a href="#section' + i + '" style="text-decoration: none;">' + section[i].innerHTML + "</a></li>";
+        }
+
+        function showTop() {
+            window.scrollTo(0, 0)
+        }
+    </script>
+</body>
+
+</html>
